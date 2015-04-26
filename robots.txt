@@ -1,8 +1,8 @@
-## robots.txt for Magento Community and Enterprise
+## robots.txt para Magento Community Brasil
 
-## GENERAL SETTINGS
+## CONFIGURAÇÕES GERAIS
 
-## Enable robots.txt rules for all crawlers
+## HABILITA robots.txt PARA TODOS OS BUSCADORES (BING E GOOGLE)
 User-agent: *
 
 ## Crawl-delay parameter: number of seconds to wait between successive requests to the same server. 
