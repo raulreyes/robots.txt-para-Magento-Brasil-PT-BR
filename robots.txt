@@ -5,25 +5,25 @@
 ## HABILITA robots.txt PARA TODOS OS BUSCADORES (BING E GOOGLE)
 User-agent: *
 
-## Crawl-delay parameter: number of seconds to wait between successive requests to the same server. 
-## Set a custom crawl rate if you're experiencing traffic problems with your server.
+## Parâmetro Crawl -delay : número de segundos de espera entre as solicitações sucessivas para o mesmo servidor. 
+## Defina uma taxa de costume rastreamento se você estiver enfrentando problemas de tráfego com o seu servidor.
 # Crawl-delay: 30
 
-## Magento sitemap: uncomment and replace the URL to your Magento sitemap file
-Sitemap: https://www.fator5.net/sitemap.xml
+## Magento sitemap: remova o comentário e substituir a URL no seu arquivo Sitemap Magento
+Sitemap: https://www.seusite.net/sitemap.xml
 
 ## DEVELOPMENT RELATED SETTINGS
 
-## Do not crawl development files and folders: CVS, svn directories and dump files
+## Não rastrear arquivos de desenvolvimento e pastas: CVS , SVN e diretórios arquivos de despejo
 Disallow: CVS
 Disallow: .svn
 Disallow: .idea
 Disallow: .sql
 Disallow: .tgz
 
-## GENERAL MAGENTO SETTINGS
+## Configurações Gerais Magento
 
-## Do not crawl Magento admin page
+## Não rastrear página de administração Magento
 Disallow: /admin/
 Disallow: /index.php/admin/
 Disallow: /home
@@ -31,7 +31,7 @@ Disallow: /magento
 Disallow: /review/
 Disallow: /tag/
 
-## Do not crawl common Magento technical folders
+## Não rastrear pastas técnicas Magento comuns 
 Disallow: /app/
 Disallow: /downloader/
 Disallow: /errors/
@@ -41,7 +41,7 @@ Disallow: /pkginfo/
 Disallow: /shell/
 Disallow: /var/
 
-## Do not crawl common Magento files
+## Não rastrear arquivos comuns Magento
 Disallow: /api.php
 Disallow: /cron.php
 Disallow: /cron.sh
@@ -54,9 +54,9 @@ Disallow: /LICENSE_AFL.txt
 Disallow: /README.txt
 Disallow: /RELEASE_NOTES.txt
 
-## MAGENTO SEO IMPROVEMENTS
+## MAGENTO SEO MELHORIAS
 
-## Do not crawl sub category pages that are sorted or filtered.
+## Não rastrear categoria sub-páginas que são classificados ou filtrados.
 Disallow: /*?dir*
 Disallow: /*?dir=desc
 Disallow: /*?dir=asc
@@ -67,45 +67,42 @@ Disallow: /*?___from_store*
 Disallow: /*?___store*
 
 
-## Do not crawl 2-nd home page copy (example.com/index.php/). Uncomment it only if you activated Magento SEO URLs.
-## Disallow: /index.php/
+## Do not crawl 2-nd home page copy (example.com/index.php/). Descomente -lo somente se você ativou URLs Magento SEO.
+Disallow: /index.php/
 
 ## Do not crawl links with session IDs
 Disallow: /*?SID=
 Disallow: /?SID=
 
-## Do not crawl checkout and user account pages
+## Não rastrear ligações com IDs de sessão
 Disallow: /checkout/
 Disallow: /checkout/cart/
 Disallow: /customer/
 Disallow: /customer/account/
 Disallow: /customer/account/login/
 
-## Do not crawl seach pages and not-SEO optimized catalog links
+## Não rastrear páginas Seach e não - SEO ligações catálogo otimizados
 Disallow: /catalogsearch/
 Disallow: /catalog/product_compare/
 Disallow: /catalog/category/view/
 Disallow: /catalog/product/view/
 
 
-##Personalizado Renato
-Disallow: /amostra*
+## SERVIDOR DEFINIÇÕES
 
-## SERVER SETTINGS
-
-## Do not crawl common server technical folders and files
+## Não rastrear pastas técnicas e arquivos do servidor comum
 Disallow: /cgi-bin/
 Disallow: /cleanup.php
 Disallow: /apc.php
 Disallow: /memcache.php
 Disallow: /phpinfo.php
 
-## IMAGE CRAWLERS SETTINGS
+## Configurações de imagem Crawlers
 
-## Extra: Uncomment if you do not wish Google and Bing to index your images
- User-agent: Googlebot-Image
+## Extra: Descomente se você não quiser o Google e Bing para indexar as suas imagens
+# User-agent: Googlebot-Image
 # Disallow: /
-##Personalizado Renato
-Disallow: /catalog/product/gallery/image/
+
+
 # User-agent: msnbot-media
 # Disallow: /
